@@ -65,7 +65,7 @@ hasDisplayableError(controlName: string): Boolean
       this.regService.loginUser(this.form.value).subscribe({
         next:(res:any)=>{
           this.regService.saveToken(res.token);
-          this.router.navigateByUrl('pages/landing-screen');
+          this.router.navigateByUrl('landing-screen');
           this.form.reset();
           this.isSubmitted = true;
           this.toastr.info('User Logged on','Login successful!');

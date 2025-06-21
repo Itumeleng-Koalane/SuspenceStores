@@ -1,0 +1,65 @@
+<nav class="navbar navbar-light bg-light shadow-sm py-2">
+  <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+    <a class="navbar-brand d-flex align-items-center fw-bold fs-4" style="color: #9b0404;">
+      <img src="SuspenceStore.jpeg" alt="Logo" class="me-2" style="height: 35px;" />
+      SUSPENCE STORES
+    </a>
+    <div class="d-flex align-items-center">
+      <span class="border border-secondary-subtle rounded px-3 py-2 text-dark fw-semibold me-3 d-none d-md-inline">
+        {{ FullName }}
+      </span>
+      <i class="bi 	bi-cart-plus-fill fs-4 me-3" role="button" data-bs-toggle="modal" data-bs-target="#cartModal" style="color: #9b0404;"></i>
+        <button class="btn text-white" (click)="logoutNotification()" style="background-color: #9b0404;">
+            Logout
+        </button>
+    </div>
+  </div>
+</nav>
+<!-- Banner Section -->
+<div class="bg-dark border-bottom shadow-sm py-3 px-4">
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
+    
+    <!-- Banner Text -->
+    <div class="mb-3 mb-md-0">
+      <h4 class="fw-bold text-danger m-0">Explore Our Categories</h4>
+      <p class="text-secondary m-0">Find the best deals across all product types</p>
+    </div>
+
+    <!-- Tabs -->
+    <ul class="nav nav-pills mt-3 mt-md-0">
+      <li class="nav-item">
+        <a class="nav-link active" data-bs-toggle="tab" href="#all">All Products</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#electronics">Electronics</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#clothing">Clothing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-bs-toggle="tab" href="#appliances">Appliances</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<!-- Tab Content -->
+<div class="tab-content p-4">
+  <div class="tab-pane fade show active" id="all">
+    <!-- All Products Content -->
+    <p>Showing all products...</p>
+  </div>
+  <div class="tab-pane fade" id="electronics">
+    <!-- Electronics Content -->
+    <p>Browse Electronics here...</p>
+  </div>
+  <div class="tab-pane fade" id="clothing">
+    <!-- Clothing Content -->
+    <p>Shop the latest Clothing items...</p>
+  </div>
+  <div class="tab-pane fade" id="appliances">
+    <!-- Appliances Content -->
+    <p>Find quality Appliances for your home...</p>
+  </div>
+</div>
+

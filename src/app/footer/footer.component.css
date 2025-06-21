@@ -1,0 +1,13 @@
+.footer-bottom {
+    background-color: transparent;
+    text-align: center;
+    font-size:larger;
+    font-weight: bold;
+    margin-top: auto;
+    padding: 10px 0;
+    color: maroon;
+}
+
+.footer-bottom p {
+    margin: 0px 0;
+}

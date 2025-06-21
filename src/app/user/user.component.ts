@@ -1,12 +1,14 @@
 import { trigger, transition, query, style, animate } from '@angular/animations';
 import { Component } from '@angular/core';
 import { ChildrenOutletContexts, RouterOutlet } from '@angular/router';
+import { FooterComponent } from "../footer/footer.component";
 
 @Component({
   selector: 'app-user',
   imports: [
-    RouterOutlet
-  ],
+    RouterOutlet,
+    FooterComponent
+],
   templateUrl: './user.component.html',
   styleUrl: './user.component.css',
   animations: [
